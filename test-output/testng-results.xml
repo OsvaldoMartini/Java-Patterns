@@ -2,49 +2,49 @@
 <testng-results total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-28T11:06:40Z" name="Default suite" finished-at="2021-04-28T11:06:48Z" duration-ms="8055">
+  <suite started-at="2021-04-28T17:03:33Z" name="Default suite" finished-at="2021-04-28T17:03:52Z" duration-ms="18060">
     <groups>
       <group name="a">
-        <method signature="TestDecorator.Verify_File_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" name="Verify_File_Get_Project_Dir" class="com.training.patterns.TestDecorator"/>
-        <method signature="TestDecorator.Verify_Paths_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" name="Verify_Paths_Get_Project_Dir" class="com.training.patterns.TestDecorator"/>
-        <method signature="TestDecorator.Veriry_FileSystems_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" name="Veriry_FileSystems_Get_Project_Dir" class="com.training.patterns.TestDecorator"/>
+        <method signature="TestFileDataSource.Verify_File_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" name="Verify_File_Get_Project_Dir" class="com.training.patterns.TestFileDataSource"/>
+        <method signature="TestFileDataSource.Verify_Paths_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" name="Verify_Paths_Get_Project_Dir" class="com.training.patterns.TestFileDataSource"/>
+        <method signature="TestFileDataSource.Veriry_FileSystems_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" name="Veriry_FileSystems_Get_Project_Dir" class="com.training.patterns.TestFileDataSource"/>
       </group> <!-- a -->
     </groups>
-    <test started-at="2021-04-28T11:06:40Z" name="Default test" finished-at="2021-04-28T11:06:48Z" duration-ms="8055">
-      <class name="com.training.patterns.TestDecorator">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="setUp" finished-at="2021-04-28T13:06:40Z" duration-ms="5" status="PASS">
+    <test started-at="2021-04-28T17:03:33Z" name="Default test" finished-at="2021-04-28T17:03:52Z" duration-ms="18060">
+      <class name="com.training.patterns.TestFileDataSource">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:33Z" name="setUp" finished-at="2021-04-28T19:03:34Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_File_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="Verify_File_Get_Project_Dir" finished-at="2021-04-28T13:06:40Z" duration-ms="6" status="PASS">
+        <test-method signature="Verify_File_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="Verify_File_Get_Project_Dir" finished-at="2021-04-28T19:03:34Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verify_File_Get_Project_Dir -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="setUp" finished-at="2021-04-28T13:06:40Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="setUp" finished-at="2021-04-28T19:03:34Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Verify_Paths_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="Verify_Paths_Get_Project_Dir" finished-at="2021-04-28T13:06:40Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Paths_Get_Project_Dir -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="setUp" finished-at="2021-04-28T13:06:40Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Veriry_FileSystems_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="Veriry_FileSystems_Get_Project_Dir" finished-at="2021-04-28T13:06:40Z" duration-ms="2" status="PASS">
+        <test-method signature="Veriry_FileSystems_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="Veriry_FileSystems_Get_Project_Dir" finished-at="2021-04-28T19:03:34Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Veriry_FileSystems_Get_Project_Dir -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="setUp" finished-at="2021-04-28T13:06:40Z" duration-ms="0" status="PASS">
+        <test-method signature="Verify_Paths_Get_Project_Dir()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="Verify_Paths_Get_Project_Dir" finished-at="2021-04-28T19:03:34Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Paths_Get_Project_Dir -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="setUp" finished-at="2021-04-28T19:03:34Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Should_Write_File_As_Raw_String()[pri:1, instance:com.training.patterns.TestDecorator@19c65cdc]" started-at="2021-04-28T13:06:40Z" name="Should_Write_File_As_Raw_String" depends-on-groups="a" finished-at="2021-04-28T13:06:48Z" duration-ms="8025" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="setUp" finished-at="2021-04-28T19:03:34Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Should_Write_File_As_Raw_String()[pri:1, instance:com.training.patterns.TestFileDataSource@68df9280]" started-at="2021-04-28T19:03:34Z" name="Should_Write_File_As_Raw_String" depends-on-groups="a" finished-at="2021-04-28T19:03:52Z" duration-ms="18019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Should_Write_File_As_Raw_String -->
-      </class> <!-- com.training.patterns.TestDecorator -->
+      </class> <!-- com.training.patterns.TestFileDataSource -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

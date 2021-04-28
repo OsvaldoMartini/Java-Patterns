@@ -10,9 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.training.decorator.DataSource;
+import com.training.decorator.CompressionDecorator;
+import com.training.decorator.DataSourceDecorator;
+import com.training.decorator.EncryptionDecorator;
+import com.training.decorator.FileDataSource;
+import com.training.decorator.IDataSource;
 
-public class TestDecorator {
+public class TestFileDataSource {
 
 	String projectDir;
 
@@ -41,17 +45,28 @@ public class TestDecorator {
 
 		SimpleDateFormat dtFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-		String FileName = projectDir + "/src/main/resources/Raw_File_" + dtFormat.format(new Date()) + ".csv";
+		String FileName = "Salaries_File_" + dtFormat.format(new Date()) + ".csv";
 
-		DataSource dtSource = new DataSource(FileName);
+		FileDataSource dtSource = new FileDataSource(projectDir + "/Output", FileName);
 
 		// its Write Byte Stream
-		dtSource.writeData("Raw Stream Line 1");
-		dtSource.writeData("Raw Stream Line 2");
+		dtSource.writeData("Byte Stream Line 1");
+		dtSource.writeData("Byte Stream Line 2");
 
-		String txtFile = dtSource.readData();
+		// Encryptor Decorator
+		IDataSource encoded = new CompressionDecorator(
+				new EncryptionDecorator(new DataSourceDecorator(new FileDataSource(projectDir + "/Output", FileName))));
+		String salaryRecords = "Name,Salary\nOsvaldo Martini,10000\nClaudia,50000";
+		encoded.writeData(salaryRecords);
 
-		System.out.print("Write as Raw String File " + txtFile);
+		IDataSource plainText = new FileDataSource(projectDir + "/Output", FileName);
+
+		System.out.println("- Input data -----------");
+		System.out.println(salaryRecords);
+		System.out.println("- Encoded -----------");
+		System.out.println(plainText.readData());
+		System.out.println("- Decoded -----------");
+		System.out.println(encoded.readData());
 
 	}
 

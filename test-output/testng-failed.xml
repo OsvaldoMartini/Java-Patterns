@@ -3,15 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.training.patterns.TestDecorator">
+      <class name="com.training.patterns.TestFileDataSource">
         <methods>
-          <include name="Should_Write_File_As_Raw_String"/>
-          <include name="Verify_Paths_Get_Project_Dir"/>
-          <include name="Verify_File_Get_Project_Dir"/>
           <include name="setUp"/>
           <include name="Veriry_FileSystems_Get_Project_Dir"/>
+          <include name="Verify_File_Get_Project_Dir"/>
+          <include name="Should_Write_File_As_Raw_String"/>
+          <include name="Verify_Paths_Get_Project_Dir"/>
         </methods>
-      </class> <!-- com.training.patterns.TestDecorator -->
+      </class> <!-- com.training.patterns.TestFileDataSource -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
