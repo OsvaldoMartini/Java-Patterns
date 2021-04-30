@@ -1,8 +1,10 @@
 package com.training.restassured;
 
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -41,5 +43,23 @@ public class Rest_Api_Tests {
 //	           .when().get("http://demo.guru99.com/V4/sinkministatement.php").then().log()
 //	           .body();
 	}
+  
+
+@Test
+public void Post_Login_Test() {
+	Response response = RestAssured.given().
+			contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			 .body("{ \"username\":\"" + USERNAME + "\", \"password\":\"" + PASSWORD + "\"}")
+			.when()
+			.post(BASE_URL + "/api/users/login/Project-Template");
+	System.out.println("POST Response\n" + response.asString());
+	// tests
+	response.then().body("success", Matchers.any(Boolean.class));
+	response.then().body("token", Matchers.any(String.class));
+	
+	//response.then().body("id", Matchers.any(Integer.class));
+	//response.then().body("name", Matchers.is("Osvaldo"));
+}
   
 }

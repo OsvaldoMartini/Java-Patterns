@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4196" started-at="2021-04-30T13:44:47Z" finished-at="2021-04-30T13:44:51Z">
+  <suite name="Default suite" duration-ms="1685" started-at="2021-04-30T13:51:39Z" finished-at="2021-04-30T13:51:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4196" started-at="2021-04-30T13:44:47Z" finished-at="2021-04-30T13:44:51Z">
+    <test name="Default test" duration-ms="1685" started-at="2021-04-30T13:51:39Z" finished-at="2021-04-30T13:51:41Z">
       <class name="com.training.restassured.Rest_Api_Tests">
-        <test-method status="PASS" signature="getResponseBody()[pri:0, instance:com.training.restassured.Rest_Api_Tests@fdefd3f]" name="getResponseBody" duration-ms="4185" started-at="2021-04-30T15:44:47Z" finished-at="2021-04-30T15:44:51Z">
+        <test-method status="PASS" signature="Post_Login_Test()[pri:0, instance:com.training.restassured.Rest_Api_Tests@fdefd3f]" name="Post_Login_Test" duration-ms="1674" started-at="2021-04-30T15:51:39Z" finished-at="2021-04-30T15:51:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResponseBody -->
+        </test-method> <!-- Post_Login_Test -->
       </class> <!-- com.training.restassured.Rest_Api_Tests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
