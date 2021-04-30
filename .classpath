@@ -34,5 +34,35 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/osval/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar" sourcepath="C:/Users/osval/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="cucumber-core"/>
+			<attribute name="maven.version" value="1.2.5"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/osval/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar" sourcepath="C:/Users/osval/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="cucumber-junit"/>
+			<attribute name="maven.version" value="1.2.5"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/osval/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar" sourcepath="C:/Users/osval/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="cucumber-java"/>
+			<attribute name="maven.version" value="1.2.5"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
