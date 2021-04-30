@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test parallel="none" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.training.patterns.TestFileDataSource">
+      <class name="com.training.restassured.Rest_Api_Tests">
         <methods>
-          <include name="setUp"/>
-          <include name="Veriry_FileSystems_Get_Project_Dir"/>
-          <include name="Verify_File_Get_Project_Dir"/>
-          <include name="Should_Write_File_As_Raw_String"/>
-          <include name="Verify_Paths_Get_Project_Dir"/>
+          <include name="getResponseBody"/>
         </methods>
-      </class> <!-- com.training.patterns.TestFileDataSource -->
+      </class> <!-- com.training.restassured.Rest_Api_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
